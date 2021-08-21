@@ -1,0 +1,21 @@
+RefactoringTool: Skipping optional fixer: buffer
+RefactoringTool: Skipping optional fixer: idioms
+RefactoringTool: Skipping optional fixer: set_literal
+RefactoringTool: Skipping optional fixer: ws_comma
+RefactoringTool: Refactored ./gcipher/py3/unisos/gcipher/cipher/Rot.py
+RefactoringTool: Files that were modified:
+RefactoringTool: ./gcipher/py3/unisos/gcipher/cipher/Rot.py
+--- ./gcipher/py3/unisos/gcipher/cipher/Rot.py	(original)
++++ ./gcipher/py3/unisos/gcipher/cipher/Rot.py	(refactored)
+@@ -1,8 +1,8 @@
+ """This module contains the Rot class."""
+ 
+-from CharacterCipher import CharacterCipher
+-from KeyedCipher import KeyedCipher
+-from Tools import LEN_ALPHABET, apply_caseless, offset, from_offset
++from .CharacterCipher import CharacterCipher
++from .KeyedCipher import KeyedCipher
++from .Tools import LEN_ALPHABET, apply_caseless, offset, from_offset
+ 
+ 
+ class Rot(CharacterCipher, KeyedCipher):

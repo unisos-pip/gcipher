@@ -1,0 +1,22 @@
+RefactoringTool: Skipping optional fixer: buffer
+RefactoringTool: Skipping optional fixer: idioms
+RefactoringTool: Skipping optional fixer: set_literal
+RefactoringTool: Skipping optional fixer: ws_comma
+RefactoringTool: Refactored ./gcipher/py3/unisos/gcipher/cipher/Vigenere.py
+RefactoringTool: Files that were modified:
+RefactoringTool: ./gcipher/py3/unisos/gcipher/cipher/Vigenere.py
+--- ./gcipher/py3/unisos/gcipher/cipher/Vigenere.py	(original)
++++ ./gcipher/py3/unisos/gcipher/cipher/Vigenere.py	(refactored)
+@@ -2,9 +2,9 @@
+ 
+ from operator import add, sub
+ 
+-from CharacterCipher import CharacterCipher
+-from KeyedCipher import KeyedCipher
+-from Tools import LEN_ALPHABET, apply_caseless, offset, from_offset
++from .CharacterCipher import CharacterCipher
++from .KeyedCipher import KeyedCipher
++from .Tools import LEN_ALPHABET, apply_caseless, offset, from_offset
+ 
+ 
+ class Vigenere(CharacterCipher, KeyedCipher):

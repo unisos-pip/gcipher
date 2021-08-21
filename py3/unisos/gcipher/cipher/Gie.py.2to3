@@ -1,0 +1,19 @@
+RefactoringTool: Skipping optional fixer: buffer
+RefactoringTool: Skipping optional fixer: idioms
+RefactoringTool: Skipping optional fixer: set_literal
+RefactoringTool: Skipping optional fixer: ws_comma
+RefactoringTool: Refactored ./gcipher/py3/unisos/gcipher/cipher/Gie.py
+RefactoringTool: Files that were modified:
+RefactoringTool: ./gcipher/py3/unisos/gcipher/cipher/Gie.py
+--- ./gcipher/py3/unisos/gcipher/cipher/Gie.py	(original)
++++ ./gcipher/py3/unisos/gcipher/cipher/Gie.py	(refactored)
+@@ -1,7 +1,7 @@
+ """This file contains the Gie class."""
+ 
+-from CharacterCipher import CharacterCipher
+-from Tools import apply_caseless, offset
++from .CharacterCipher import CharacterCipher
++from .Tools import apply_caseless, offset
+ 
+ 
+ class Gie(CharacterCipher):

@@ -1,0 +1,18 @@
+RefactoringTool: Skipping optional fixer: buffer
+RefactoringTool: Skipping optional fixer: idioms
+RefactoringTool: Skipping optional fixer: set_literal
+RefactoringTool: Skipping optional fixer: ws_comma
+RefactoringTool: Refactored ./gcipher/py3/unisos/gcipher/GtkAttributesFacade.py
+RefactoringTool: Files that were modified:
+RefactoringTool: ./gcipher/py3/unisos/gcipher/GtkAttributesFacade.py
+--- ./gcipher/py3/unisos/gcipher/GtkAttributesFacade.py	(original)
++++ ./gcipher/py3/unisos/gcipher/GtkAttributesFacade.py	(refactored)
+@@ -32,7 +32,7 @@
+         """
+         setter = "set_" + name
+         if hasattr(self.instance, setter):
+-            apply(getattr(self.instance, setter), [value])
++            getattr(self.instance, setter)(*[value])
+         else:
+             self.__dict__[name] = value
+         return value

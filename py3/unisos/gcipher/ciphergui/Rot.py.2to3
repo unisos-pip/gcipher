@@ -1,0 +1,18 @@
+RefactoringTool: Skipping optional fixer: buffer
+RefactoringTool: Skipping optional fixer: idioms
+RefactoringTool: Skipping optional fixer: set_literal
+RefactoringTool: Skipping optional fixer: ws_comma
+RefactoringTool: Refactored ./gcipher/py3/unisos/gcipher/ciphergui/Rot.py
+RefactoringTool: Files that were modified:
+RefactoringTool: ./gcipher/py3/unisos/gcipher/ciphergui/Rot.py
+--- ./gcipher/py3/unisos/gcipher/ciphergui/Rot.py	(original)
++++ ./gcipher/py3/unisos/gcipher/ciphergui/Rot.py	(refactored)
+@@ -2,7 +2,7 @@
+ 
+ from os.path import join
+ 
+-from KeyDialog import KeyDialog
++from .KeyDialog import KeyDialog
+ import cipher.Rot
+ import Const
+ 

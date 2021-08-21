@@ -1,0 +1,18 @@
+RefactoringTool: Skipping optional fixer: buffer
+RefactoringTool: Skipping optional fixer: idioms
+RefactoringTool: Skipping optional fixer: set_literal
+RefactoringTool: Skipping optional fixer: ws_comma
+RefactoringTool: Refactored ./gcipher/py3/unisos/gcipher/LibGladeApplication.py
+RefactoringTool: Files that were modified:
+RefactoringTool: ./gcipher/py3/unisos/gcipher/LibGladeApplication.py
+--- ./gcipher/py3/unisos/gcipher/LibGladeApplication.py	(original)
++++ ./gcipher/py3/unisos/gcipher/LibGladeApplication.py	(refactored)
+@@ -4,7 +4,7 @@
+ import gtk
+ from gtk import glade
+ 
+-from GtkAttributesFacade import GtkAttributesFacade 
++from .GtkAttributesFacade import GtkAttributesFacade 
+ 
+ 
+ class LibGladeApplication:

@@ -1,0 +1,15 @@
+RefactoringTool: Skipping optional fixer: buffer
+RefactoringTool: Skipping optional fixer: idioms
+RefactoringTool: Skipping optional fixer: set_literal
+RefactoringTool: Skipping optional fixer: ws_comma
+RefactoringTool: Refactored ./gcipher/py3/unisos/gcipher/cipher/Caesar.py
+RefactoringTool: Files that were modified:
+RefactoringTool: ./gcipher/py3/unisos/gcipher/cipher/Caesar.py
+--- ./gcipher/py3/unisos/gcipher/cipher/Caesar.py	(original)
++++ ./gcipher/py3/unisos/gcipher/cipher/Caesar.py	(refactored)
+@@ -1,4 +1,4 @@
+-from Rot import Rot
++from .Rot import Rot
+ class Caesar(Rot):
+     def __init__(self): 
+         self.key = 3

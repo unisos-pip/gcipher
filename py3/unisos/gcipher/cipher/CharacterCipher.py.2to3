@@ -1,0 +1,17 @@
+RefactoringTool: Skipping optional fixer: buffer
+RefactoringTool: Skipping optional fixer: idioms
+RefactoringTool: Skipping optional fixer: set_literal
+RefactoringTool: Skipping optional fixer: ws_comma
+RefactoringTool: Refactored ./gcipher/py3/unisos/gcipher/cipher/CharacterCipher.py
+RefactoringTool: Files that were modified:
+RefactoringTool: ./gcipher/py3/unisos/gcipher/cipher/CharacterCipher.py
+--- ./gcipher/py3/unisos/gcipher/cipher/CharacterCipher.py	(original)
++++ ./gcipher/py3/unisos/gcipher/cipher/CharacterCipher.py	(refactored)
+@@ -1,6 +1,6 @@
+ """This module contains the CharacterCipher class."""
+ 
+-from cStringIO import StringIO
++from io import StringIO
+ 
+ 
+ class CharacterCipher:
